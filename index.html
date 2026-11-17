@@ -1463,6 +1463,27 @@ body *:not(.lh):not(.lh-mob){-webkit-backdrop-filter:none!important;backdrop-fil
   .fd{background:none;border:0;border-radius:0}
   .fd figcaption{background:none;border:0;padding:0 2px;border-radius:0}
 }
+
+/* closing CTA, matched to the page: dark deck panel, purple wash, hero buttons, flat founder card */
+.cta.cta2{background:radial-gradient(60% 80% at 50% 110%,rgba(124,59,237,.30),transparent 65%),radial-gradient(40% 60% at 92% 0%,rgba(124,59,237,.16),transparent 70%),var(--card);
+  border:1px solid var(--line-strong);box-shadow:0 0 80px -30px rgba(124,59,237,.55)}
+.cta2::after{opacity:.35}
+.cta2-rings i{border-color:rgba(167,139,250,.14)!important}
+.cta2-rings i:nth-child(1){background:radial-gradient(closest-side,rgba(124,59,237,.18),transparent)}
+.cta2-eb{background:var(--tint);border-color:var(--line-strong);color:var(--lav)!important}
+.cta2 h2{color:var(--fg)}
+.cta2-hl{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:var(--accent)}
+.cta2 .btn-p{box-shadow:0 14px 34px -14px rgba(124,59,237,.8)}
+.cta2 .btn-s{background:var(--s1);color:var(--fg);border-color:var(--line-2);box-shadow:none}
+.cta2 .btn-s .chip{background:var(--s3);color:var(--fg)}
+.fnote.cta2-strip{background:var(--card-2);border:1px solid var(--glass-bd)}
+.cta2-strip .fnote-who span{color:var(--muted)}
+.cta2-strip .fnote-who img{border-color:var(--line-strong)}
+.cta2-strip p{color:var(--fg-2);border-left-color:var(--line-2)}
+.cta2-strip p .ic{color:var(--lav)}
+@media (max-width:860px){.cta2-strip p{border-top-color:var(--line-2)}}
+.cta-sec::before{opacity:.5}
+@media (max-width:1199px){.cta2-strip{width:100%}.cta2-strip .fnote-who span,.cta2-strip p{white-space:normal}}
 </style>
 
 <header class="lh">
@@ -1869,14 +1890,14 @@ body *:not(.lh):not(.lh-mob){-webkit-backdrop-filter:none!important;backdrop-fil
 
   <section class="cta-sec" style="padding-top:0;padding-bottom:40px">
     <div class="wrap">
-      <div class="cta cta2 on-band">
+      <div class="cta cta2">
         <div class="cta2-rings" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
         <div class="cta2-main">
           <span class="eyebrow cta2-eb"><span class="cta2-dot" aria-hidden="true"></span>Go live in 24h</span>
           <h2 class="d-lg">Tell us your goal. <span class="cta2-hl">We take it live in 24 hours.</span></h2>
           <div class="hero-ctas">
-            <a class="btn btn-s" href="https://calendly.com/nj-troopod/troopod-demo">Go live today <span class="chip"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"/></svg></span></a>
-            <a class="btn btn-ghost" href="#results">View case studies</a>
+            <a class="btn btn-p" href="https://calendly.com/nj-troopod/troopod-demo">Go live today <span class="chip"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"/></svg></span></a>
+            <a class="btn btn-s" href="#results">View case studies</a>
           </div>
         </div>
         <div class="fnote cta2-strip">
